@@ -1,0 +1,25 @@
+{
+  "name": "with-tailwind",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "shopify:dev": "shopify theme dev",
+    "tailwind": "tailwindcss -i ./assets/tailwind.css -o ./assets/style.css --watch --minify",
+    "dev": "concurrently \"npm run tailwind\" \"npm run shopify:dev\"",
+    "check": "shopify theme check",
+    "deploy": "shopify theme deploy",
+    "open": "shopify theme open",
+    "publish": "shopify theme publish",
+    "replace": "shopify theme replace",
+    "watch": "shopify theme watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "husky": "^8.0.3"
+  }
+}
