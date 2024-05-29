@@ -3505,3 +3505,17 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+.announcement-bar {
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+.announcement-bar__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
