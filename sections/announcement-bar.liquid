@@ -2,10 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>{{ page_title }} - {{ shop.name }}</title>
+  {{ content_for_header }}
+  <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+  <style>
+    .announcement-bar {
+      background-color: #f5f5f5;
+      color: #333;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+    .announcement-bar__close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-  <h1>header</h1>
-</body>
-</html>
+  <header class="site-header">
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcement-bar">
+      <span>Free shipping on orders over $50!</span>
+      <span class="announcement-bar__close" onclick="document.getElementById('announcement-bar').style.display='none'">✖</span>
+    </div>
+    </header>
+      
+    </body>
+    </html>
