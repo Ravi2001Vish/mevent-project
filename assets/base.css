@@ -3515,14 +3515,14 @@ details-disclosure > details {
 
 
 }
-.announcement-bar__close {
+/* .announcement-bar__close {
   position: absolute;
   right: 29px;
   top: 19px;
   cursor: pointer;
   font-size: 16px;
 
-}
+} */
 .announcement-bar:hover{
   background-color: red;
   transition: 0.6s;
