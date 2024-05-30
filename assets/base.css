@@ -2002,9 +2002,9 @@ input[type='checkbox'] {
   margin: 0;
 }
 
-.quantity__input[type='number'] {
+/* .quantity__input[type='number'] {
   -moz-appearance: textfield;
-}
+} */
 
 .quantity__rules {
   margin-top: 0.5rem;
