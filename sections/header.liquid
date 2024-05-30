@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="{{ 'base.css' | asset_url }}">
-</head>
-<body>
-  <header>
+<header>
   <div class="site-header">
     <div class="site-logo">
       <!-- Logo -->
-   
+      <a href="{{ shop.url }}">
+        <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}">
+      </a>
     </div>
 
     <nav class="site-navigation">
       <!-- Navigation Menu -->
       <ul>
         {% for link in linklists.main-menu.links %}
-        <li>hiii</li>
+          <li><a href="{{ link.url}}">{{"name"}}</a></li>
         {% endfor %}
       </ul>
     </nav>
@@ -35,5 +28,3 @@
     </div>
   </div>
 </header>
-</body>
-</html>
