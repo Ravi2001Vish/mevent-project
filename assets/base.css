@@ -3524,3 +3524,32 @@ details-disclosure > details {
   transition: 0.6s;
   color: white;
 }
+/* Custom Header Styles */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+
+.site-logo img {
+  max-height: 50px;
+}
+
+.site-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.site-navigation li {
+  margin: 0 10px;
+}
+
+.site-header-icons a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000000;
+}
