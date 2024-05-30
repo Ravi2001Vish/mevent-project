@@ -3511,6 +3511,7 @@ details-disclosure > details {
   text-align: center;
   padding: 10px;
   font-size: 14px;
+  width: 50%;
 
 }
 .announcement-bar__close {
@@ -3519,7 +3520,7 @@ details-disclosure > details {
   top: 19px;
   cursor: pointer;
   font-size: 16px;
-  background-color: aqua;
+
 }
 .announcement-bar:hover{
   background-color: red;
